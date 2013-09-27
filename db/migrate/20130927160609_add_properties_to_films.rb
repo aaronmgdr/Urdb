@@ -9,5 +9,5 @@ class AddPropertiesToFilms < ActiveRecord::Migration
     add_column :films,  :budget,    :integer
     add_column :films,  :gross,   :integer
   end
-
+t
 end

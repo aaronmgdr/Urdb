@@ -11,3 +11,31 @@
  *= require_self
  *= require_tree .
  */
+
+ @import url(http://fonts.googleapis.com/css?family=Kite+One);
+strong {
+  color: #000;
+}
+
+body {
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Film_strip.jpg/1280px-Film_strip.jpg);
+}
+
+p {
+ background-color: rgba(56, 42, 25, 0.6);
+ color: #fff;
+}
+
+
+ul, li {
+  float: left;
+  padding: 10px; 
+  list-style: none;
+}
+h1 {
+  padding-left: 5em
+}
+
+h1, p, li, body {
+ font-family: 'Kite One', sans-serif;
+}
