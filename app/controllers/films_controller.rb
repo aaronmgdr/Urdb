@@ -5,8 +5,17 @@ class FilmsController < ApplicationController
 
   def show
     title = params[:film]
-
     @film =  Film.find_by_title(title)
+
+    
+  end
+
+  def show_id
+
+    id = params[:id]
+    @film =Film.find(id)
+
+
   end
 
   def new

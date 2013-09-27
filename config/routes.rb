@@ -8,5 +8,6 @@ Urdb::Application.routes.draw do
 
   get '/films/:film' => 'films#show', as: 'film'
 
+  get '/:id'  => 'films#show_id'
 
 end
