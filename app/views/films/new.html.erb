@@ -1,0 +1,39 @@
+<h1> Add Film to Database </h1>
+
+<%= form_for :film, url: films_path do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p> 
+    <%= f.label :director %>
+    <%= f.text_field :director %>
+  </p>
+  <p> 
+    <%= f.label :poster %>
+    <%= f.url_field :poster %>
+  </p>
+  <p> 
+    <%= f.label :open %>
+    <%= f.date_field :open %>
+  </p>
+  <p> 
+    <%= f.label :synopsis %>
+    <%= f.text_area :synopsis, size: "60x12" %>
+  </p>
+  <p> 
+    <%= f.label :trailer %>
+    <%= f.text_field :trailer %>
+  </p>
+  <p> 
+    <%= f.label :budget %>
+    <%= f.text_field :budget %>
+  </p>
+   <p> 
+    <%= f.label :gross %>
+    <%= f.text_field :gross %>
+  </p>
+  <p> 
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
