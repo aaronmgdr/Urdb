@@ -6,8 +6,8 @@ Urdb::Application.routes.draw do
    
   get '/films' => 'films#index'
 
-  get '/films/:film' => 'films#show', as: 'film'
+  get '/:film' => 'films#show', as: 'film'
 
-  get '/:id'  => 'films#show_id'
+  get '/films/:id'  => 'films#show_id', as: 'film_id'
 
 end

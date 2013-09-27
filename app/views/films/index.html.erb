@@ -1,7 +1,7 @@
 <h1> Film list </h1>
 <ul>
   <% @films.each do |film| %>
-  <li> <%= link_to image_tag(film.poster , size: "490x200", alt: "#{film.title}"), film_path(film.title)  %>
+  <li> <%= link_to image_tag(film.poster , size: "490x200", alt: "#{film.title}"), film_id_path(film.id)  %>
   <% end %> 
 </ul>
 

@@ -7,14 +7,13 @@ class FilmsController < ApplicationController
     title = params[:film]
     @film =  Film.find_by_title(title)
 
-    
+    redirect_to film_id_path(@film.id)
   end
 
   def show_id
 
     id = params[:id]
-    @film =Film.find(id)
-
+    @film = Film.find(id)
 
   end
 
